@@ -1,1 +1,35 @@
-React Demo 
+export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
+export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
+export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home
+export JAVA_22_HOME=/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias java17='export JAVA_HOME=$JAVA_17_HOME'
+alias java22='export JAVA_HOME=$JAVA_22_HOME'
+export JAVA_HOME=$JAVA_17_HOME
+ 
+export PATH=$PATH:$JAVA_HOME/bin
+export GRADLE_HOME="/opt/gradle-8.10"
+export PATH=$PATH:$GRADLE_HOME/bin
+export PATH="/opt/homebrew/bin:$PATH"
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_AVD_HOME=~/.android/avd
+export MAVEN_HOME=$HOME/apache-maven-3.9.9
+export PATH=$PATH:$MAVEN_HOME/bin
+ 
+#export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+#export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export PATH="/opt/homebrew/Cellar/node/22.9.0/bin:$PATH"
+export NODE_OPTIONS=--openssl-legacy-provider
+export CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL=file\:///Users/e5657738/Downloads/gradle-8.7-all.zip
+ 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+ 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
